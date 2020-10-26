@@ -1,2 +1,0 @@
-# GPUSampler-Storage
-basic version
