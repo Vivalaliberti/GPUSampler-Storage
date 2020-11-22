@@ -1,6 +1,7 @@
 # GPUSampler-Storage
 Base Version
-## sampler
-GPU random sampler, GPU indegree sampler, GPU edge weight sampler, GPU topk sampler, GPU full sampler
-## storage
-GPU Adjacent Matrix Storage, GPU auto indexing, GPU topo storage, GPU topo statics, GPU edge storage, GPU graph storage
+## Sampler
+GPU Random Sampler, GPU Indegree Sampler, GPU Edge Weight Sampler, GPU Topk sampler, GPU Full sampler
+The scan algorithum in Indegree / Edge Weight Sampler is being modified.(Using Segment Scan)
+## Storage
+GPU Adjacent Matrix Storage, GPU Auto Indexing, GPU Topo Storage, GPU Topo Statics, GPU Edge Storage, GPU Graph Storage
