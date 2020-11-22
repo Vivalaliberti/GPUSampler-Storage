@@ -1,0 +1,82 @@
+#ifndef GRAPHLEARN_INCLUDE_CONSTANTS_H_
+#define GRAPHLEARN_INCLUDE_CONSTANTS_H_
+
+
+extern const char* kPartitionKey;
+extern const char* kOpName;
+extern const char* kNodeType;
+extern const char* kEdgeType;
+extern const char* kType;
+extern const char* kSrcType;
+extern const char* kDstType;
+extern const char* kSrcIds;
+extern const char* kDstIds;
+extern const char* kNodeIds;
+extern const char* kEdgeIds;
+extern const char* kNeighborCount;
+extern const char* kNeighborIds;
+extern const char* kBatchSize;
+extern const char* kIsSparse;
+extern const char* kStrategy;
+extern const char* kDegreeKey;
+extern const char* kWeightKey;
+extern const char* kLabelKey;
+extern const char* kIntAttrKey;
+extern const char* kFloatAttrKey;
+extern const char* kStringAttrKey;
+extern const char* kSideInfo;
+extern const char* kDirection;
+extern const char* kSegmentIds;
+extern const char* kNumSegments;
+extern const char* kSegments;
+
+enum SystemState {
+    kBlank = 0,
+    kStarted = 1,
+    kInited = 2,
+    kReady = 3,
+    kStopped = 4
+};
+
+
+enum DataFormat {
+    kDefault = 1,
+    kWeighted = 2,
+    kLabeled = 4,
+    kAttributed = 8
+};
+
+enum Direction {
+    kOrigin,
+    kReversed
+};
+
+
+enum DataType {
+    kInt32,
+    kInt64,
+    kFloat,
+    kDouble,
+    kString,
+    kUnknown
+};
+
+enum PartitionMode {
+    kNoPartition = 0,
+    kByHash = 1
+};
+
+enum PaddingMode {
+    kReplicate = 0,
+    kCircular = 1
+};
+
+enum NodeFrom {
+    kEdgeSrc,
+    kEdgeDst,
+    kNode
+};
+
+
+
+#endif  // GRAPHLEARN_INCLUDE_CONSTANTS_H_
